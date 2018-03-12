@@ -28,4 +28,4 @@ function fromDir(startPath, filter) {
 
 }
 
-fromDir('out/', '.html')
+fromDir('./out/', '.html')
