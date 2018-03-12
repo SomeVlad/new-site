@@ -1,7 +1,3 @@
-import Typograf from 'typograf'
-
-const tp = new Typograf({ locale: ['ru', 'en-US'] })
-
 export default class extends React.Component {
     render() {
         return (
@@ -18,9 +14,5 @@ export default class extends React.Component {
                 `}</style>
             </p>
         )
-    }
-
-    componentDidMount() {
-        this.ref.innerHTML = tp.execute(this.ref.innerHTML) // TODO: remove
     }
 }
