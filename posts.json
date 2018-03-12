@@ -31,12 +31,25 @@
         "id": "swiss-knife-bot",
         "date": "12 Sep",
         "title": "Telegram bot to make you happier",
-        "description": "It is meant to do a lot of useful stuff. And it does."
+        "description": "It is meant to do a lot of useful stuff. And it does.",
+        "picture": "/static/images/bender-preview.jpg",
+        "styles": {
+          "color": "white",
+          "height": "700px",
+          "padding": "40px"
+        }
       },
       {
-        "id": "answer-more-questions",
-        "date": "January 6, 2017",
-        "title": "IV questions 2"
+        "id": "more-answers",
+        "date": "3 Sep",
+        "title": "Several typical js tasks – pt. II",
+        "description": "Maybe one day this post will save me even more time on an interview."
+      },
+      {
+        "id": "answers",
+        "date": "31 Jul",
+        "title": "Several typical js tasks – pt. I",
+        "description": "Maybe one day this post will save me some time on an interview."
       }
     ]
   },

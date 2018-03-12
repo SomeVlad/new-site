@@ -13,7 +13,6 @@ class Post extends React.Component {
                         {/*language=CSS*/}
                         <style jsx>{`
                             h2 {
-                                /*font-family: 'Alegreya Sans', sans-serif;*/
                                 font-family: var(--xprmntl-font);
                                 line-height: 1.2;
                                 font-size: 72px;
