@@ -1,3 +1,3 @@
 export default () => (
-    <hr />
+    <hr style={{marginTop: '50px', marginBottom: '40px'}} />
 )

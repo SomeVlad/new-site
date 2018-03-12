@@ -8,17 +8,6 @@ import UL, { LI } from '../components/post/list'
 import Code, { Codeblock } from '../components/post/code'
 import HR from '../components/post/hr'
 
-// import P from '../../components/post/paragraph'
-// import { H2, H3 } from '../../components/post/heading'
-// import UL, { LI } from '../../components/post/bullets-list'
-// import { Ref, FootNotes, Note } from '../../components/post/footnotes'
-// import Figure, { Image, Video } from '../../components/post/figure'
-// import Quote from '../../components/post/quote'
-// import Link from 'next/link'
-// import YouTube from '../../components/post/youtube'
-// import Meta from '../../components/post/meta'
-
-// export default () => (
 export default class extends React.Component {
     assignDeep = (target, ...sources) => {
         // check if nothing left to merge the target with
