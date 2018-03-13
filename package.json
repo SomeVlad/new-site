@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export && node typograph.js",
+    "export": "next build && next export && typograf -l en-US ./out/**/*.html",
     "serveStatic": "npm run export && cd ./out/ && python -m http.server 8000"
   },
   "keywords": [],
@@ -22,6 +22,6 @@
     "react-syntax-highlighter": "^7.0.2"
   },
   "devDependencies": {
-    "typograf": "^6.6.2"
+    "typograf-cli": "^3.0.0"
   }
 }

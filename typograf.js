@@ -1,7 +1,25 @@
 #!/usr/bin/env node
 
-const path = require('path'), fs = require('fs'), Typograf = require('./node_modules/typograf')
-const tp = new Typograf({ locale: ['ru', 'en-US'] })
+const path = require('path'), fs = require('fs');
+// Typograf = require('typograf')
+// const tp = new Typograf({ locale: ['ru', 'en-US'] })
+
+const npm = require('npm');
+npm.load(function(err) {
+    // handle errors
+
+    // install module ffi
+    npm.commands.install(['typograf-cli'], function(er, data) {
+        // log errors or data
+    });
+
+    npm.on('log', function(message) {
+        // log installation progress
+        console.log(message);
+    });
+});
+
+
 
 function fromDir(startPath, filter) {
 
