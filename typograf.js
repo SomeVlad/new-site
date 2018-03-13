@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const path = require('path'), fs = require('fs'), Typograf = require('typograf')
+const path = require('path'), fs = require('fs'), Typograf = require('./node_modules/typograf')
 const tp = new Typograf({ locale: ['ru', 'en-US'] })
 
 function fromDir(startPath, filter) {
