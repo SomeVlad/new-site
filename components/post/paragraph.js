@@ -1,6 +1,6 @@
-export default (props) => (
+export default ({ children }) => (
     <p>
-        {props.children}
+        {children}
         {/*language=CSS*/}
         <style jsx>{`
             p {

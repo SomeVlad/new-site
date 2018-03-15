@@ -34,7 +34,7 @@ export default class extends React.Component {
                         line-height: 1.6;
                         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
                         color: var(--color-black);
-                        font-feature-settings: "liga" 1, "dlig" 1, "onum" 1, "lnum" 1, "tnum" 1, "zero" 1, "frac" 1, "sups" 1, "subs" 1, "case" 1, "hlig" 1, "swsh" 1, "hist" 1, "ss**" 1, "kern" 1, "locl" 1, "rlig" 1, "medi" 1, "init" 1, "isol" 1, "fina" 1, "mark" 1, "salt" 1, "mkmk" 1; /* "smcp" 1, "c2sc" 1, */
+                        font-feature-settings: "liga" 1, "dlig" 1, "onum" 1, "lnum" 1, "tnum" 1, "zero" 1, "frac" 1, "case" 1, "hlig" 1, "swsh" 1, "hist" 1, "ss**" 1, "kern" 1, "locl" 1, "rlig" 1, "medi" 1, "init" 1, "isol" 1, "fina" 1, "mark" 1, "salt" 1, "mkmk" 1; /* "smcp" 1, "c2sc" 1, */
                         font-variant-ligatures: common-ligatures contextual discretionary-ligatures historical-ligatures;
                         text-rendering: optimizeLegibility;
                     }

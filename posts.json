@@ -30,6 +30,12 @@
         "date": "20 Jul",
         "title": "The Answer to The Ultimate Question",
         "description": "of Life, the Universe, and Everything"
+      },
+      {
+        "id": "web-animations-api",
+        "date": "1 Jul",
+        "title": "In a nutshell: Web Animations API",
+        "description": "What is this? Is it better than CSS animations?"
       }
     ],
     "2016": [
