@@ -2,6 +2,15 @@ const getAlternateLetters = () => `0${(Math.floor(Math.random() * 17) + 1)}`.sli
 const getTextTransform = () => ['capitalize', 'lowercase'][Math.floor(Math.random() * 3)]
 
 export default class extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { ab: false }
+    }
+
+    componentWillMount() {
+        this.setState({ ab: false })
+    }
+
     render() {
         return (
             <main className="content">
@@ -18,6 +27,7 @@ export default class extends React.Component {
 
                     :root {
                         --color-black: #333333;
+                        --text-width: 720px;
                         --alternate-letters: "ss${getAlternateLetters()}" 1;
                         --text-transform: ${getTextTransform()};
                         --color-blue: #000AFF;

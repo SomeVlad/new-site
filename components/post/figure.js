@@ -51,7 +51,7 @@ const Image = ({ width, src, ...rest }) => (
                 /*text-align: center;*/
             }
             img {
-                max-width: 100%;
+                width: var(--text-width);
                 margin: 1rem 0;
             }
         `}</style>

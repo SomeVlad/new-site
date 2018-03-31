@@ -36,6 +36,12 @@
         "date": "1 Jul",
         "title": "In a nutshell: Web Animations API",
         "description": "What is this? Is it better than CSS animations?"
+      },
+      {
+        "id": "fr-units",
+        "date": "27 Jun",
+        "title": "In a nutshell: `fr` units",
+        "description": "Just enough for you to start using them."
       }
     ],
     "2016": [

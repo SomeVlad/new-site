@@ -5,9 +5,9 @@ export default ({ children }) => (
         <style jsx>{`
             p {
                 line-height: 41px;
-                font-size: 28px;
+                font-size: 24px;
                 margin: 0 0 24px;
-                width: 680px;
+                width: var(--text-width);
             }
         `}</style>
     </p>
