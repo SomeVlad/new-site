@@ -5,7 +5,7 @@ import P from '../components/post/paragraph'
 import Code, { Codeblock } from '../components/post/code'
 import UL, { LI } from '../components/post/list'
 import HR from '../components/post/hr'
-import Codepen from 'react-codepen-embed'
+import CodePen from '../components/post/codePen'
 
 export default () => (
     <Post>
@@ -26,12 +26,11 @@ export default () => (
                 grid elements:</LI>
         </UL>
 
-        <Codepen hash='yXPRKY' user='some_vlad' height={400} defaultTab='result' preview={false}
-                 loader={() => <div>
-                     <a target='_blank' rel='noopener noreferrer'
-                        href='https://codepen.io/some_vlad/pen/yXPRKY/'>Pen</a> by{' '}
-                     <a target='_blank' rel='noopener noreferrer' href='https://codepen.io/some_vlad'>Vlad Samoylov</a>.
-                 </div>} />
-
+        <CodePen hash='yXPRKY' user='some_vlad' height={400} defaultTab='result' preview={false}
+                  loader={() => <div>
+                      <a target='_blank' rel='noopener noreferrer'
+                         href='https://codepen.io/some_vlad/pen/yXPRKY/'>Pen</a> by{' '}
+                      <a target='_blank' rel='noopener noreferrer' href='https://codepen.io/some_vlad'>Vlad Samoylov</a>.
+                  </div>} />
     </Post>
 )
