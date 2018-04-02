@@ -57,7 +57,7 @@ export default class extends React.Component {
                     <title>Several typical js tasks – pt. I</title>
                 </Head>
 
-                <H1>Several typical js tasks – pt. I</H1>
+                <H1>Several typical js tasks — pt. I</H1>
 
                 <P>Wandering around the internet I’ve stumbled upon another <a
                     href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)"
