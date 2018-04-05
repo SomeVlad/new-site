@@ -14,9 +14,14 @@ export default class extends React.Component {
                     {this.props.children}
 
                     {/*language=CSS*/}
-                    <style jsx>{`
+                    <style jsx global>{`
                         .post {
-                            padding-left: 160px;
+                            /*padding-left: 160px;*/
+                        }
+
+                        .post > *:not(h1):not(ul),
+                        .post > ul > li > *:not(pre) {
+                            max-width: var(--text-width);
                         }
                     `}</style>
                 </article>

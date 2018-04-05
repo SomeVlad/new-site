@@ -42,6 +42,12 @@
         "date": "27 Jun",
         "title": "In a nutshell: `fr` units",
         "description": "Just enough for you to start using them."
+      },
+      {
+        "id": "pleeze-halp",
+        "date": "16 Jun",
+        "title": "How to exit vim",
+        "description": "↑ Click here to figure out!"
       }
     ],
     "2016": [
