@@ -48,6 +48,12 @@
         "date": "16 Jun",
         "title": "How to exit vim",
         "description": "↑ Click here to figure out!"
+      },
+      {
+        "id": "optimizing-frontend",
+        "date": "7 Jun",
+        "title": "A few thoughts on frontend optimization",
+        "description": "There are a lot of things you can do in order to optimize client-side. But sometimes it goes wrong."
       }
     ],
     "2016": [

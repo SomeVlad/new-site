@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-class Post extends React.Component {
+class Posts extends React.Component {
     render() {
         const { year, entries } = this.props
         return (
@@ -62,7 +62,7 @@ export default class extends React.Component {
                 {Object.keys(entries).sort().reverse().map((year, index) => (
                         <div className={`yearBlock${index === 0 ? ' first' : ''}`} key={index}>
                             <div className="year">{year}</div>
-                            <Post year={year} entries={entries[year]} />
+                            <Posts year={year} entries={entries[year]} />
                         </div>
                     )
                 )}

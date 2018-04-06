@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Post from '../layouts/post'
+import A from '../components/post/a'
 import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import { Image } from '../components/post/figure'
@@ -47,8 +48,8 @@ export default () => (
 
         <P>Similarly to almost every other myth, this one comes from just an <strong>ignorance</strong>.</P>
 
-        <P><a href="https://www.destroyallsoftware.com/talks/wat" target="_blank" rel="noopener noreferrer">This
-            talk</a>, for example. All of this derived from lack of understanding how javascript actually works. How
+        <P><A href="https://www.destroyallsoftware.com/talks/wat">This
+            talk</A>, for example. All of this derived from lack of understanding how javascript actually works. How
             does plus operator work, how its type conversion works, what is <Code>ToPrimitive</Code>, how parser and
             interpreter analyze code. And frankly, it is not ridiculous at all. Once you understand it, it makes a lot
             of sense.</P>

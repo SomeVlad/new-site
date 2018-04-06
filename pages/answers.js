@@ -1,24 +1,12 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Post from '../layouts/post'
+import A from '../components/post/a'
 import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
-import { Image } from '../components/post/figure'
 import UL, { LI } from '../components/post/list'
 import Code, { Codeblock } from '../components/post/code'
 import HR from '../components/post/hr'
 
-// import P from '../../components/post/paragraph'
-// import { H2, H3 } from '../../components/post/heading'
-// import UL, { LI } from '../../components/post/bullets-list'
-// import { Ref, FootNotes, Note } from '../../components/post/footnotes'
-// import Figure, { Image, Video } from '../../components/post/figure'
-// import Quote from '../../components/post/quote'
-// import Link from 'next/link'
-// import YouTube from '../../components/post/youtube'
-// import Meta from '../../components/post/meta'
-
-// export default () => (
 export default class extends React.Component {
     assignDeep = (target, ...sources) => {
         // check if nothing left to merge the target with
@@ -59,9 +47,9 @@ export default class extends React.Component {
 
                 <H1>Several typical js tasks — pt. I</H1>
 
-                <P>Wandering around the internet I’ve stumbled upon another <a
-                    href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)"
-                    target="_blank" rel="noopener noreferrer">“list of things each frontender should know”</a>. At first
+                <P>Wandering around the internet I’ve stumbled upon another <A
+                    href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)">“list
+                    of things each frontender should know”</A>. At first
                     I wanted to write a topic with my opinion on such lists, but then I decided not to do that, and just
                     complete the coding tasks instead. Most of them I’ve already seen while passing interviews, and I
                     thought it would be handy to have it all done at once so I have my code samples on hand.</P>
@@ -261,7 +249,6 @@ function (num) {
     }
 
     missing(array) {
-        // the actual formula is N * (N -1) but our array is one element shy
         const sum1toN = n => n * (n + 1) / 2
         const arraySum = array.reduce((prev, curr) => prev + curr)
         return sum1toN(array.length) === arraySum ? false : sum1toN(array.length + 1) - arraySum

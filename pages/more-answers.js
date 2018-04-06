@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import A from '../components/post/a'
 import Post from '../layouts/post'
 import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
@@ -50,9 +51,8 @@ export default class extends React.Component {
 
                 <P>This is the second part (first is <Link href='/answers/'><a>here</a></Link>) of things “each
                     frontender should know”
-                    according to <a
-                        href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)"
-                        target="_blank" rel="noopener noreferrer">this</a> topic.</P>
+                    according to <A
+                        href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)">this</A> topic.</P>
 
                 <Image src='/static/images/more-answers.png'
                        alt="I can definitely relate to that."

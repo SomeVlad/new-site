@@ -29,8 +29,7 @@ export default () => (
         <H2>Next time use nano</H2>
 
         <P>If you find yourself locked inside vim only during use of <Code>git</Code>, consider
-            setting <Code>nano</Code>
-            as your default editor.</P>
+            setting <Code>nano</Code> as your default editor.</P>
 
         <Codeblock language='bash'>{`git config --global core.editor "nano"`}</Codeblock>
 

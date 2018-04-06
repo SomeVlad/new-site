@@ -7,7 +7,7 @@ export default class extends React.Component {
         return (
             <Page>
                 <Head>
-                    <title>Влад Самойлов</title>
+                    <title>Vlad Samoylov</title>
                 </Head>
                 <Header />
                 <article className="post">
@@ -15,10 +15,6 @@ export default class extends React.Component {
 
                     {/*language=CSS*/}
                     <style jsx global>{`
-                        .post {
-                            /*padding-left: 160px;*/
-                        }
-
                         .post > *:not(h1):not(ul),
                         .post > ul > li > *:not(pre) {
                             max-width: var(--text-width);

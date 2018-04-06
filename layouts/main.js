@@ -8,6 +8,7 @@ export default class extends React.Component {
     }
 
     componentWillMount() {
+        /* TODO: adblock check */
         this.setState({ ab: false })
     }
 
@@ -28,6 +29,7 @@ export default class extends React.Component {
                     :root {
                         --color-black: #333333;
                         --text-width: 720px;
+                        --content-width: 1200px;
                         --alternate-letters: "ss${getAlternateLetters()}" 1;
                         --text-transform: ${getTextTransform()};
                         --color-blue: #000AFF;
@@ -67,9 +69,7 @@ export default class extends React.Component {
                     }*/
 
                     .content {
-                        /*max-width: 1020px;*/
-                        /*min-width: 980px;*/
-                        width: 1200px;
+                        width: var(--content-width);
                         padding: 10px 40px;
                         margin: 0 auto;
                     }
