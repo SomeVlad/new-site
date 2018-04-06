@@ -18,7 +18,7 @@ const LI = ({ children }) => (
         <style jsx>{`
             li {
                 margin-bottom: 0.5rem;
-                font-size: 28px;
+                /*font-size: 28px;*/
                 position: relative;
                 margin-left: 30px;
             }
@@ -28,11 +28,9 @@ const LI = ({ children }) => (
                 font-feature-settings: "ss12";
                 font-family: var(--xprmntl-font);
                 font-size: 20px;
-                /*vertical-align: middle;*/
-                /*margin-right: 8px;*/
                 position: absolute;
                 left: -30px;
-                top: 6px;
+                top: 4px;
             }
 
             @keyframes rotation {
