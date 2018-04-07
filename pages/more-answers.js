@@ -5,7 +5,7 @@ import Post from '../layouts/post'
 import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import { Image } from '../components/post/figure'
-import UL, { LI } from '../components/post/list'
+import { OL, OLI } from '../components/post/list'
 import Code, { Codeblock } from '../components/post/code'
 import HR from '../components/post/hr'
 
@@ -67,25 +67,24 @@ export default class extends React.Component {
 
                 <H2>Implement the following functions:</H2>
 
-                {/* TODO OL */}
-                <UL>
-                    <LI>
+                <OL>
+                    <OLI>
                         <P><Code>fib2</Code> - like the <Code>fib</Code> function you implemented above, able to handle
                             numbers up to 50 (hint: look up memoization).</P>
 
                         <P><Link href="/answers/"><a>Done already</a></Link>.</P>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>isBalanced2</Code> - like the <Code>isBalanced</Code> function you implemented above,
                             but supports 3 types of braces: curly <Code>{'{}'}</Code>, square <Code>[]</Code>, and
                             round <Code>()</Code>. A string with interleaving braces should
                             return <Code>false</Code>.</P>
 
                         <P><Link href="/answers/"><a>Done already</a></Link>.</P>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>uniq</Code> - takes an array of numbers, and returns the unique numbers. Can you do it
                             in O(N) time?</P>
 
@@ -94,9 +93,9 @@ export default class extends React.Component {
     if (!Array.isArray(array)) return new Error('Not an array')
     return Array.from(new Set(array))
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>intersection</Code> - find the intersection of two arrays. Can you do it in O(M+N) time
                             (where M and N are the lengths of the two arrays)?</P>
                         <P>Yes, I can. I guess.</P>
@@ -112,9 +111,9 @@ export default class extends React.Component {
          uniqFirst.filter(num => uniqSecond.includes(num)) :
          uniqSecond.filter(num => uniqFirst.includes(num))
  }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>sort</Code> - implement the sort function to sort an array of numbers in O(N×log(N))
                             time.</P>
                         <P>Just a merge sort. I stole it.
@@ -142,19 +141,19 @@ export default class extends React.Component {
 
      return merge(this.sort(listL), this.sort(listR))
  }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>includes</Code> - return <Code>true</Code> or <Code>false</Code> indicating whether the
                             given number appears in the given sorted array. Can you do it in O(log(N)) time?</P>
 
                         <P>Let’s apply divide and conquer paradigm.</P>
 
-                        <UL> {/*TODO OL*/}
-                            <LI>We can do dichotomous division of an initial array,</LI>
-                            <LI>compare the middle element with the number we search for and then</LI>
-                            <LI>repeat the procedure with the correct subarray.</LI>
-                        </UL>
+                        <OL>
+                            <OLI>We can do dichotomous division of an initial array,</OLI>
+                            <OLI>compare the middle element with the number we search for and then</OLI>
+                            <OLI>repeat the procedure with the correct subarray.</OLI>
+                        </OL>
 
                         <P>Binary search basically.</P>
 
@@ -180,9 +179,9 @@ export default class extends React.Component {
 
      return merge(this.sort(listL), this.sort(listR))
  }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>assignDeep</Code> - like <Code>Object.assign</Code>, but merges objects deeply. For the
                             sake of simplicity, you can assume that objects can contain only numbers and other objects
                             (and not arrays, functions, etc.).</P>
@@ -220,8 +219,8 @@ export default class extends React.Component {
 
                         <P>Check your console to see how it works.</P>
 
-                    </LI>
-                </UL>
+                    </OLI>
+                </OL>
 
                 <HR />
 

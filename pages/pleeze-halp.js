@@ -4,7 +4,7 @@ import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import { Image } from '../components/post/figure'
 import Code, { Codeblock } from '../components/post/code'
-import UL, { LI } from '../components/post/list'
+import { UL, ULI } from '../components/post/list'
 import HR from '../components/post/hr'
 
 export default () => (
@@ -18,8 +18,8 @@ export default () => (
         <H2>First way</H2>
 
         <UL>
-            <LI>Open another terminal tab with <Code>cmd</Code>/<Code>ctrl + t</Code></LI>
-            <LI><Code>killall -9 vim</Code></LI>
+            <ULI>Open another terminal tab with <Code>cmd</Code>/<Code>ctrl + t</Code></ULI>
+            <ULI><Code>killall -9 vim</Code></ULI>
         </UL>
 
         <H2>Second way</H2>
@@ -33,7 +33,7 @@ export default () => (
 
         <Codeblock language='bash'>{`git config --global core.editor "nano"`}</Codeblock>
 
-        <HR/>
+        <HR />
 
         <P>Enjoy!</P>
     </Post>

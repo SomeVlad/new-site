@@ -5,7 +5,7 @@ export default ({ children }) => (
         <style jsx>{`
             p {
                 line-height: 41px;
-                font-size: 24px;
+                font-size: var(--base-font-size);
                 margin: 0 0 24px;
                 width: var(--text-width);
             }

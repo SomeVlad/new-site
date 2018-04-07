@@ -4,7 +4,7 @@ import Post from '../layouts/post'
 import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import { Image } from '../components/post/figure'
-import UL, { LI } from '../components/post/list'
+import { UL, ULI } from '../components/post/list'
 
 export default () => (
     <Post>
@@ -46,12 +46,12 @@ export default () => (
 
         <P>For now it can do these things:</P>
         <UL>
-            <LI>convert shitty mobile facebook links into pretty parseable desktop ones;</LI>
-            <LI>convert youtube video to mp3. Just send the link;</LI>
-            <LI>in addition to unshitted m.fb link it parses (if the link is of specific type, but I'll fix that
+            <ULI>convert shitty mobile facebook links into pretty parseable desktop ones;</ULI>
+            <ULI>convert youtube video to mp3. Just send the link;</ULI>
+            <ULI>in addition to unshitted m.fb link it parses (if the link is of specific type, but I'll fix that
                 eventually) given post (if it's public) and creates telegra.ph page with its content (text only,
-                actually). <a href="https://t.me/some_vlad" rel="nofollow">Bugreports are welcome</a>.</LI>
-            <LI>that’s it. For now.</LI>
+                actually). <a href="https://t.me/some_vlad" rel="nofollow">Bugreports are welcome</a>.</ULI>
+            <ULI>that’s it. For now.</ULI>
         </UL>
 
         <Image src="/static/images/bender-dancing.gif" alt="An animated picture of robot dancing"

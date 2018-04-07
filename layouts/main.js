@@ -34,6 +34,7 @@ export default class extends React.Component {
                         --text-transform: ${getTextTransform()};
                         --color-blue: #000AFF;
                         --xprmntl-font: 'xprmntl', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+                        --base-font-size: 24px;
                     }
 
                     * {
@@ -42,7 +43,7 @@ export default class extends React.Component {
                     }
 
                     html {
-                        font-size: 24px;
+                        font-size: var(--base-font-size);
                         line-height: 1.6;
                         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
                         color: var(--color-black);

@@ -30,3 +30,18 @@ export const H2 = ({ children, style }) => (
         `}</style>
     </h2>
 )
+
+export const H3 = ({ children, style }) => (
+    <h3 style={style}>{children}
+        {/*language=CSS*/}
+        <style jsx>{`
+            h3 {
+                font-family: var(--xprmntl-font);
+                line-height: 1.2;
+                font-size: 56px;
+                margin-top: 70px;
+                font-weight: normal;
+            }
+        `}</style>
+    </h3>
+)

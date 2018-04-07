@@ -3,7 +3,7 @@ import Post from '../layouts/post'
 import { H1 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import Code, { Codeblock } from '../components/post/code'
-import UL, { LI } from '../components/post/list'
+import { UL, ULI } from '../components/post/list'
 import HR from '../components/post/hr'
 
 export default () => (
@@ -15,13 +15,13 @@ export default () => (
         <H1>In a nutshell: Web Animations API</H1>
 
         <UL> {/* TODO: OL*/}
-            <LI>Web Animations API is a native API for animations in JavaScript.</LI>
-            <LI>Syntax is pretty close to jQuery's <Code>.animate()</Code>:
+            <ULI>Web Animations API is a native API for animations in JavaScript.</ULI>
+            <ULI>Syntax is pretty close to jQuery's <Code>.animate()</Code>:
                 <Codeblock>{`const element = document.querySelector('.animate-me')
 element.animate(keyframes, options)`}</Codeblock>
-            </LI>
-            <LI><Code>keyframes</Code> is an array of objects, representing frames.</LI>
-            <LI>Syntax is similar to <Code>@keyframes</Code> from CSS. <em>kebab-case</em> must be converted
+            </ULI>
+            <ULI><Code>keyframes</Code> is an array of objects, representing frames.</ULI>
+            <ULI>Syntax is similar to <Code>@keyframes</Code> from CSS. <em>kebab-case</em> must be converted
                 to <em>lowerCamelCase</em>.
                 <Codeblock>{`const keyframes = [
     {
@@ -37,8 +37,8 @@ element.animate(keyframes, options)`}</Codeblock>
         opacity: 1
     }
 ]`}</Codeblock>
-            </LI>
-            <LI><Code>options</Code> is an object containing, well, options:
+            </ULI>
+            <ULI><Code>options</Code> is an object containing, well, options:
                 <Codeblock>{`const options = {
     iterations: Infinity, // number of iterations, animation-iteration-count
     iterationStart: 0, // first iteration, may be decimal
@@ -49,9 +49,9 @@ element.animate(keyframes, options)`}</Codeblock>
     fill: 'forwards', // animation-fill-mode
     easing: 'ease-out', // default is \`linear\` instead of \`ease\` in CSS (animation-timing-function)
 }`}</Codeblock>
-            </LI>
-            <LI>You don't have to use <Code>will-change</Code> with it.</LI>
-            <LI>With Web Animations API we can easily manipulate animations.
+            </ULI>
+            <ULI>You don't have to use <Code>will-change</Code> with it.</ULI>
+            <ULI>With Web Animations API we can easily manipulate animations.
                 <Codeblock>{`element.getAnimations() // returns an array of animations or transitions applied to our element using CSS or WAAPI
     .map(animation => {
         animation.pause()
@@ -63,7 +63,7 @@ element.animate(keyframes, options)`}</Codeblock>
         // and promises
         animation.finished.then(() => element.remove())
     })`}</Codeblock>
-            </LI>
+            </ULI>
         </UL>
 
         <HR />

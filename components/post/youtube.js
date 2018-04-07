@@ -29,6 +29,8 @@ class YouTube extends React.Component {
                             padding-bottom: 56.25%; /* 16:9 */
                             padding-top: 25px;
                             height: 0;
+                            border: 1px solid var(--color-black);
+                            background-color: #eeeeee;
                         }
 
                         .youtube-wrapper iframe {
@@ -37,6 +39,18 @@ class YouTube extends React.Component {
                             left: 0;
                             width: 100%;
                             height: 100%;
+                        }
+
+                        .youtube-wrapper::after {
+                            content: 'Video!';
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            width: 100%;
+                            text-align: center;
+                            font-family: var(--xprmntl-font);
+                            color: #888;
+                            transform: translateY(-50%);
                         }
                     `}</style>
                 </div>

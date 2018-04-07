@@ -5,7 +5,7 @@ import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import { Image } from '../components/post/figure'
 import Code, { Codeblock } from '../components/post/code'
-import UL, { LI } from '../components/post/list'
+import { UL, ULI, OL, OLI } from '../components/post/list'
 import HR from '../components/post/hr'
 
 export default () => (
@@ -76,8 +76,8 @@ export default () => (
 
         <P>That’s right. In front of brackets.</P>
 
-        <UL> {/* TODO OL */}
-            <LI>If a line starts with round brackets:
+        <OL>
+            <OLI>If a line starts with round brackets:
                 <Codeblock>{`const a = 'A semicolon maybe?'
 const q = 'What am I missing? ' + a
 (function() {
@@ -85,16 +85,16 @@ const q = 'What am I missing? ' + a
 })()
 
 // a is not a function`}</Codeblock>
-            </LI>
+            </OLI>
 
-            <LI>
+            <OLI>
                 If a line starts with square brackets:
                 <Codeblock>{`const reactions = {wat: '? 🤔'}
 ['Why', 'would', 'you', 'ever', 'do', 'that'].join(' ') + reactions.wat
 
 // Cannot read property 'join' of undefined`}</Codeblock>
-            </LI>
-        </UL>
+            </OLI>
+        </OL>
 
         <P>To avoid that you can actually just prepend this line with semicolon.</P>
 

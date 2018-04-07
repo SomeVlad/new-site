@@ -3,7 +3,7 @@ import Post from '../layouts/post'
 import A from '../components/post/a'
 import { H1, H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
-import UL, { LI } from '../components/post/list'
+import { UL, ULI, OL, OLI } from '../components/post/list'
 import Code, { Codeblock } from '../components/post/code'
 import HR from '../components/post/hr'
 
@@ -58,9 +58,8 @@ export default class extends React.Component {
 
                 <H2>Implement the following functions:</H2>
 
-                {/* TODO OL */}
-                <UL>
-                    <LI>
+                <OL>
+                    <OLI>
                         <P><Code>isPrime</Code> - returns <Code>true</Code> or <Code>false</Code>, indicating whether
                             the given number is prime.</P>
 
@@ -79,18 +78,18 @@ export default class extends React.Component {
      }
      return true
  }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>factorial</Code> - returns a number that is the factorial of the given number.</P>
 
                         <Codeblock>{`function (num) {
      if (!Number.isInteger(num) || num < 1) return new Error('Not a positive integer')
      return (num !== 1) ? num * this.factorial(num - 1) : 1
  }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>fib</Code> - returns the nth Fibonacci number.</P>
 
                         <Codeblock>
@@ -101,9 +100,9 @@ function (num) {
     if (!this.cache[num]) this.cache[num] = num < 3 ? 1 : this.fib(num - 1) + this.fib(num - 2)
     return this.cache[num]
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>isSorted</Code> - returns <Code>true</Code> or <Code>false</Code>, indicating whether
                             the given array of numbers is sorted.</P>
 
@@ -119,9 +118,9 @@ function (num) {
     }
     return true
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>filter</Code> - implement the <Code>filter</Code> function.</P>
 
                         <Codeblock>
@@ -133,9 +132,9 @@ function (num) {
     }
     return newArray
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>reduce</Code> - implement the <Code>reduce</Code> function.</P>
 
                         <Codeblock>
@@ -148,9 +147,9 @@ function (num) {
     // initial accumulator and a first element of an array
     else return this.reduce(array.slice(1), callback, callback(accumulator, array[0]))
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>reverse</Code> - reverses the given string (yes, using the built
                             in <Code>reverse</Code> function is cheating).</P>
 
@@ -159,9 +158,9 @@ function (num) {
     if (typeof str !== 'string' || str.length === 0) return new Error('Bad input')
     return Array.from(str).reduce((prev, curr) => curr + prev)
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>indexOf</Code> - implement the <Code>indexOf</Code> function for arrays.</P>
 
                         <Codeblock>
@@ -172,9 +171,9 @@ function (num) {
     }
     return -1
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>isPalindrome</Code> - return <Code>true</Code> or <Code>false</Code> indicating whether
                             the given string is a palindrome (case and space insensitive).</P>
 
@@ -184,9 +183,9 @@ function (num) {
     const formattedString = str.toLowerCase().replace(/\\s/g, '')
     return formattedString === Array.from(formattedString).reverse().join('')
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>missing</Code> - takes an unsorted array of unique numbers (ie. no repeats) from 1
                             through some number n, and returns the missing number in the sequence (there are either no
                             missing numbers, or exactly one missing number). Can you do it in O(N) time? Hint: There’s a
@@ -198,9 +197,9 @@ function (num) {
         const arraySum = array.reduce((prev, curr) => prev + curr)
         return sum1toN(array.length) === arraySum ? false : sum1toN(array.length + 1) - arraySum
 }`}</Codeblock>
-                    </LI>
+                    </OLI>
 
-                    <LI>
+                    <OLI>
                         <P><Code>isBalanced</Code> - takes a string and
                             returns <Code>true</Code> or <Code>false</Code> indicating whether its curly braces are
                             balanced.</P>
@@ -238,8 +237,8 @@ function (num) {
     return stack.length === 0
 }`}</Codeblock>
 
-                    </LI>
-                </UL>
+                    </OLI>
+                </OL>
 
                 <HR />
 
