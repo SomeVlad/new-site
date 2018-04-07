@@ -19,25 +19,27 @@ class YouTube extends React.Component {
 
     render() {
         return (
-            <div className='youtube-wrapper'>
-                <Youtube {...this.props} />
-                {/*language=CSS*/}
-                <style jsx global>{`
-                    .youtube-wrapper {
-                        position: relative;
-                        padding-bottom: 56.25%; /* 16:9 */
-                        padding-top: 25px;
-                        height: 0;
-                    }
+            <div>
+                <div className='youtube-wrapper'>
+                    <Youtube {...this.props} />
+                    {/*language=CSS*/}
+                    <style jsx global>{`
+                        .youtube-wrapper {
+                            position: relative;
+                            padding-bottom: 56.25%; /* 16:9 */
+                            padding-top: 25px;
+                            height: 0;
+                        }
 
-                    .youtube-wrapper iframe {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                    }
-                `}</style>
+                        .youtube-wrapper iframe {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    `}</style>
+                </div>
             </div>)
     }
 }
