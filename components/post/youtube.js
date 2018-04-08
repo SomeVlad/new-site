@@ -41,7 +41,7 @@ class YouTube extends React.Component {
                             height: 100%;
                         }
 
-                        .youtube-wrapper::after {
+                        .youtube-wrapper::before {
                             content: 'Video!';
                             position: absolute;
                             top: 50%;
