@@ -20,13 +20,28 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
                         margin-bottom: 1.5em;
                     }
 
+                    .facebook_link_fixer input {
+                        box-sizing: border-box;
+                        height: 2.25rem;
+                        padding: .5rem .5rem;
+                        vertical-align: middle;
+                        -webkit-appearance: none;
+                        width: 100%;
+                        display: block;
+                        border: solid 1px #ccc;
+                        border-radius: 3px;
+                        font-size: 1rem;
+                        margin-top: 0;
+                        margin-bottom: .5rem;
+                    }
+
                     .facebook_link_fixer .unshit {
                         display: block;
                         margin-top: 0.5em;
                         margin-bottom: 1em;
                         text-decoration: none;
                         text-transform: uppercase;
-                        font-weight: 300;
+                        font-weight: 100;
                         font-size: 2em;
                         position: relative;
                         text-align: center;
@@ -35,10 +50,10 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
                         border-radius: 5px;
                         line-height: 3em;
                         box-shadow: 0 0 0 0 transparent;
-                        -webkit-transition: all 0.2s ease-in;
-                        -moz-transition: all 0.2s ease-in;
                         transition: all 0.2s ease-in;
                         outline: none;
+                        width: 60%;
+                        cursor: pointer;
                     }
 
                     .facebook_link_fixer .unshit:hover {
@@ -123,10 +138,30 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
                         }
                     }
 
+                    .facebook_link_fixer .go {
+                        color: white;
+                        background-color: #0076df;
+                        border-radius: 3px;
+                    }
+
+                    .facebook_link_fixer .copy_result_to_clipboard {
+                        background-color: #eee;
+                        padding: 5px 0;
+                    }
+
+                    #good_link {
+                        margin-bottom: 0;
+                    }
+
                     .facebook_link_fixer .copy_result_to_clipboard,
                     .facebook_link_fixer .go {
                         border: none;
                         text-align: center;
+                        width: 50%;
+                        display: inline-block;
+                        font-size: var(--base-font-size);
+                        font-weight: 300;
+                        cursor: pointer;
                     }
 
                     .facebook_link_fixer .copy_result_to_clipboard:hover,
@@ -150,6 +185,10 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
                     .facebook_link_fixer .insert_sample {
                         cursor: pointer;
                     }
+
+                    .facebook_link_fixer .hide {
+                        display: none;
+                    }
                 `}</style>
 
                 <p>
@@ -166,9 +205,8 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
                 <p className="hide">And here you go!
                     <input id="good_link" type="text" className="block field col-12 mb0 hide" value=""
                            placeholder="tadaa" />
-                    <a className="go button button-blue col-6 hide" href="" target="_blank" rel="noopener noreferrer">Navigate
-                        me
-                        there!</a>
+                    <a className="go button button-blue col-6 hide" href="" target="_blank" rel="noopener noreferrer">
+                        Navigate me there!</a>
                     <button className="copy_result_to_clipboard button bg-lighter-gray col-6 right hide">Copy!</button>
                 </p>
             </div>
@@ -176,7 +214,7 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
     }
 
     componentDidMount() {
-        console.log('%cStop!', 'font-family: sans-serif; line-height: 1.5;font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; ')
+        console.log('%cStahp!', 'font-family: sans-serif; line-height: 1.5;font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black; ')
 
         const button = document.querySelector('button.unshit')
         const badInput = document.querySelector('#shitty_link')
@@ -195,6 +233,7 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
 
         function generateLink() {
             let goodLink = ''
+            debugger
             badInput.classList.remove('is-error')
             try {
                 const badLink = new URL(badInput.value)
@@ -240,8 +279,7 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
 
                 try {
                     const successful = document.execCommand('copy')
-                    const msg = successful ? 'Copied' : 'Oops, error!'
-                    buttonElem.innerHTML = msg
+                    buttonElem.innerHTML = successful ? 'Copied' : 'Oops, error!'
                 } catch (err) {
                 }
                 clearSelection()
@@ -279,7 +317,7 @@ export default () => (
         <P>When you copy a link to post from your mobile browser, you get something like this:</P>
         <Codeblock>https://m.facebook.com/story.php?story_fbid=post_id&id=user_id</Codeblock>
 
-        <P>When you send someone this link and an addressee clicks it, he sees this 💩:</P>
+        <P>When you send someone this link and an addressee clicks it, he sees this&nbsp;💩:</P>
         <Image src='/static/images/facebook.png' alt='Faceb💩k' title='Faceb💩k' />
 
         <Facebook_Link_Fixer_Legacy />
