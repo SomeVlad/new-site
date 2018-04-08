@@ -54,6 +54,12 @@
         "date": "7 Jun",
         "title": "A few thoughts on frontend optimization",
         "description": "There are a lot of things you can do in order to optimize client-side. But sometimes it goes wrong."
+      },
+      {
+        "id": "facebook-link-fixer",
+        "date": "31 May",
+        "title": "Facebook link fixer",
+        "description": "A tool to fix facebook shittiness."
       }
     ],
     "2016": [

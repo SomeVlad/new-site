@@ -10,7 +10,7 @@ import { UL, OL, ULI, OLI } from '../components/post/list'
 import Code, { Codeblock } from '../components/post/code'
 import HR from '../components/post/hr'
 
-const Optimization_Checklist = () => (
+const Optimization_Checklist_Legacy = () => (
     <div className="optimization_checklist">
         <div className="select">
             <input type="checkbox" id="1" />
@@ -185,7 +185,7 @@ export default () => (
             </OLI>
             <OLI>
                 ensure you've done all the more obvious optimization stuff<br />
-                <Optimization_Checklist />
+                <Optimization_Checklist_Legacy />
             </OLI>
             <OLI>You checked the hell out of this list but still haven't changed your mind?<br />
                 Well...
