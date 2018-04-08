@@ -44,7 +44,7 @@ export default class extends React.Component {
         const script = document.createElement('script')
         script.id = 'adblock-detection'
         script.type = 'text/javascript'
-        script.src = '/static/ads.js'
+        script.src = '/static/ads.js?'
         script.onload = noAdBlockDetected
         script.onerror = adBlockDetected
         head.appendChild(script)
