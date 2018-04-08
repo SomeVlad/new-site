@@ -5,6 +5,7 @@ export default class extends React.Component {
     constructor(props) {
         super(props)
         this.state = { ab: false }
+        this.detectAdBlocker = this.detectAdBlocker.bind(this)
     }
 
     componentWillMount() {
@@ -12,9 +13,46 @@ export default class extends React.Component {
         this.setState({ ab: false })
     }
 
+    componentDidMount() {
+        this.detectAdBlocker()
+    }
+
+    detectAdBlocker() {
+        debugger
+        const head = document.getElementsByTagName('head')[0]
+
+        const noAdBlockDetected = () => {
+            this.setState({
+                ab: false
+            })
+        }
+
+        const adBlockDetected = () => {
+            this.setState({
+                ab: true
+            })
+        }
+
+        // clean up stale bait
+        const oldScript =
+            document.getElementById('adblock-detection')
+        if (oldScript) {
+            head.removeChild(oldScript)
+        }
+
+        // we will dynamically generate some 'bait'.
+        const script = document.createElement('script')
+        script.id = 'adblock-detection'
+        script.type = 'text/javascript'
+        script.src = '/static/ads.js'
+        script.onload = noAdBlockDetected
+        script.onerror = adBlockDetected
+        head.appendChild(script)
+    }
+
     render() {
         return (
-            <main className="content">
+            this.state.ab ? <div style={{ fontSize: '100px' }}>🖕🏾🖕🏾🖕🏾</div> : <main className="content">
                 {this.props.children}
 
                 {/* global styles */}

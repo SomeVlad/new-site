@@ -14,7 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fuckadblock": "^3.2.1",
     "next": "^5.0.0",
     "npm": "^5.7.1",
     "react": "^16.2.0",

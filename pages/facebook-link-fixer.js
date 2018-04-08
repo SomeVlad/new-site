@@ -233,7 +233,6 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
 
         function generateLink() {
             let goodLink = ''
-            debugger
             badInput.classList.remove('is-error')
             try {
                 const badLink = new URL(badInput.value)
@@ -321,5 +320,9 @@ export default () => (
         <Image src='/static/images/facebook.png' alt='Faceb💩k' title='Faceb💩k' />
 
         <Facebook_Link_Fixer_Legacy />
+
+        <HR />
+
+        Enjoy!
     </Post>
 )
