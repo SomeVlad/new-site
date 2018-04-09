@@ -59,9 +59,8 @@ export default class extends React.Component {
                 <H2>Implement the following functions:</H2>
 
                 <OL>
-                    <OLI>
-                        <P><Code>isPrime</Code> - returns <Code>true</Code> or <Code>false</Code>, indicating whether
-                            the given number is prime.</P>
+                    <OLI><Code>isPrime</Code> - returns <Code>true</Code> or <Code>false</Code>, indicating whether
+                        the given number is prime.
 
                         <Codeblock>{`function isPrime(num) {
      if (!Number.isInteger(num) || num < 1) return new Error('Not a positive integer')
@@ -80,8 +79,7 @@ export default class extends React.Component {
  }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>factorial</Code> - returns a number that is the factorial of the given number.</P>
+                    <OLI><Code>factorial</Code> - returns a number that is the factorial of the given number.
 
                         <Codeblock>{`function (num) {
      if (!Number.isInteger(num) || num < 1) return new Error('Not a positive integer')
@@ -89,8 +87,7 @@ export default class extends React.Component {
  }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>fib</Code> - returns the nth Fibonacci number.</P>
+                    <OLI><Code>fib</Code> - returns the nth Fibonacci number.
 
                         <Codeblock>
                             {`// with a simple memoization
@@ -102,9 +99,8 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>isSorted</Code> - returns <Code>true</Code> or <Code>false</Code>, indicating whether
-                            the given array of numbers is sorted.</P>
+                    <OLI><Code>isSorted</Code> - returns <Code>true</Code> or <Code>false</Code>, indicating whether
+                        the given array of numbers is sorted.
 
                         <Codeblock>
                             {`function (array) {
@@ -120,8 +116,7 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>filter</Code> - implement the <Code>filter</Code> function.</P>
+                    <OLI><Code>filter</Code> - implement the <Code>filter</Code> function.
 
                         <Codeblock>
                             {`function (array, callback) {
@@ -134,8 +129,7 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>reduce</Code> - implement the <Code>reduce</Code> function.</P>
+                    <OLI><Code>reduce</Code> - implement the <Code>reduce</Code> function.
 
                         <Codeblock>
                             {`function (array, callback, accumulator = 0) {
@@ -149,9 +143,8 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>reverse</Code> - reverses the given string (yes, using the built
-                            in <Code>reverse</Code> function is cheating).</P>
+                    <OLI><Code>reverse</Code> - reverses the given string (yes, using the built
+                        in <Code>reverse</Code> function is cheating).
 
                         <Codeblock>
                             {`function (str) {
@@ -160,8 +153,7 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>indexOf</Code> - implement the <Code>indexOf</Code> function for arrays.</P>
+                    <OLI><Code>indexOf</Code> - implement the <Code>indexOf</Code> function for arrays.
 
                         <Codeblock>
                             {`function (str) {
@@ -173,9 +165,8 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>isPalindrome</Code> - return <Code>true</Code> or <Code>false</Code> indicating whether
-                            the given string is a palindrome (case and space insensitive).</P>
+                    <OLI><Code>isPalindrome</Code> - return <Code>true</Code> or <Code>false</Code> indicating whether
+                        the given string is a palindrome (case and space insensitive).
 
                         <Codeblock>
                             {`function (str) {
@@ -185,11 +176,10 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>missing</Code> - takes an unsorted array of unique numbers (ie. no repeats) from 1
-                            through some number n, and returns the missing number in the sequence (there are either no
-                            missing numbers, or exactly one missing number). Can you do it in O(N) time? Hint: There’s a
-                            clever formula you can use.</P>
+                    <OLI><Code>missing</Code> - takes an unsorted array of unique numbers (ie. no repeats) from 1
+                        through some number n, and returns the missing number in the sequence (there are either no
+                        missing numbers, or exactly one missing number). Can you do it in O(N) time? Hint: There’s a
+                        clever formula you can use.
 
                         <Codeblock>
                             {`function (array) {
@@ -199,12 +189,9 @@ function (num) {
 }`}</Codeblock>
                     </OLI>
 
-                    <OLI>
-                        <P><Code>isBalanced</Code> - takes a string and
-                            returns <Code>true</Code> or <Code>false</Code> indicating whether its curly braces are
-                            balanced.</P>
-
-                        <P>I will take it one step further: for {}, [] and ().</P>
+                    <OLI><Code>isBalanced</Code> - takes a string and
+                        returns <Code>true</Code> or <Code>false</Code> indicating whether its curly braces are
+                        balanced.<br /> I will take it one step further: for {}, [] and ().
 
                         <Codeblock>
                             {`function (str) {

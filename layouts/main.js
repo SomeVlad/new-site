@@ -18,7 +18,6 @@ export default class extends React.Component {
     }
 
     detectAdBlocker() {
-        debugger
         const head = document.getElementsByTagName('head')[0]
 
         const noAdBlockDetected = () => {

@@ -19,6 +19,7 @@ const OL = ({ counter = 'defaultCounter', children }) => (
             ol {
                 list-style: none;
                 padding: 0;
+                margin: 0 0 1.5em;
             }
         `}</style>
         {/*language=CSS*/}
@@ -36,21 +37,18 @@ const ULI = ({ children }) => (
         {/*language=CSS*/}
         <style jsx>{`
             li {
-                margin-bottom: 0.5rem;
-                /*font-size: 28px;*/
+                margin: 0 0 0.5rem 0;
                 position: relative;
-                margin-left: 30px;
+                text-indent: -2em;
+                list-style-type: none;
             }
 
             li::before {
-                content: 'o';
-                font-feature-settings: "ss12";
-                font-size: var(--base-font-size);
-                font-family: var(--xprmntl-font);
-                /*font-size: 20px;*/
-                position: absolute;
-                left: -30px;
-                top: 4px;
+                content: url(/static/images/bullet-icon.svg);
+                width: 1.5em;
+                padding-right: 0.5em;
+                text-align: right;
+                display: inline-block;
             }
         `}</style>
     </li>
@@ -62,10 +60,10 @@ const OLI = ({ counter = 'defaultCounter', children }) => (
         {/*language=CSS*/}
         <style jsx>{`
             li {
-                margin-bottom: 0.5rem;
-                /*font-size: 28px;*/
+                margin: 0 0 0.5rem 0;
                 position: relative;
-                /*margin-left: 30px;*/
+                text-indent: -2em;
+                list-style-type: none;
             }
 
             li::before {
@@ -75,10 +73,11 @@ const OLI = ({ counter = 'defaultCounter', children }) => (
                 font-family: var(--xprmntl-font);
                 font-size: var(--base-font-size);
                 line-height: 1.9;
-                position: absolute;
-                left: -32px;
-                /*top: 4px;*/
                 color: #888888;
+                width:1.5em;
+                padding-right:0.5em;
+                text-align: right;
+                display:inline-block;
             }
         `}</style>
     </li>
