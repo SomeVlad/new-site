@@ -1,13 +1,10 @@
-import Head from 'next/head'
-import Link from 'next/link'
 import Post from '../layouts/post'
-import { H1, H2, H3 } from '../components/post/heading'
+import { H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import A from '../components/post/a'
 import Youtube from '../components/post/youtube'
 import { Image } from '../components/post/figure'
-import { UL, OL, ULI, OLI } from '../components/post/list'
-import Code, { Codeblock } from '../components/post/code'
+import { OL, OLI } from '../components/post/list'
 import HR from '../components/post/hr'
 
 const Optimization_Checklist_Legacy = () => (
@@ -27,28 +24,26 @@ const Optimization_Checklist_Legacy = () => (
 
             <input type="checkbox" id="4" />
             <label htmlFor="4">Stop using SDK's for social buttons</label>
-            <P><Link href='/social-buttons-generator'><a>Use static
-                ones instead.</a></Link></P>
+            <P><A href='/social-buttons-generator'>Use static ones instead.</A></P>
 
             <input type="checkbox" id="5" />
             <label htmlFor="5">Use <code>&lt;picture&gt;</code> and <code>&lt;img srcset&gt;</code></label>
-            <P>It's quite <A href="http://www.responsivebreakpoints.com/">simple</A>.</P>
+            <P>It's quite <A external href="http://www.responsivebreakpoints.com/">simple</A>.</P>
 
             <input type="checkbox" id="6" />
             <label htmlFor="6">Use progressive jpeg, optimize png and svg</label>
             <P>
-                <A href="https://github.com/mozilla/mozjpeg">Mozilla JPEG Encoder</A>,{' '}
-                <A href="https://tinypng.com/">TinyPNG</A> for png and jpeg compression,{' '}
-                <A href="https://kornel.ski/lossygif">LossyGIF</A>,{' '}
-                <A href="https://jakearchibald.github.io/svgomg/">SVGOMG</A> powered
-                by{' '}
-                <A href="https://github.com/svg/svgo">SVGO</A>.
+                <A external href="https://github.com/mozilla/mozjpeg">Mozilla JPEG Encoder</A>,
+                {' '}<A external href="https://tinypng.com/">TinyPNG</A> for png and jpeg compression,
+                {' '}<A external href="https://kornel.ski/lossygif">LossyGIF</A>,
+                {' '}<A external href="https://jakearchibald.github.io/svgomg/">SVGOMG</A> powered by
+                {' '}<A external href="https://github.com/svg/svgo">SVGO</A>.
             </P>
 
             <input type="checkbox" id="7" />
             <label htmlFor="7">Optimize webfonts</label>
             <P>
-                <A href="https://pixelambacht.nl/2016/font-awesome-fixed/">Like this</A>,
+                <A external href="https://pixelambacht.nl/2016/font-awesome-fixed/">Like this</A>,
                 for example. Or just use system ones, that's actually an option.
             </P>
 
@@ -63,18 +58,20 @@ const Optimization_Checklist_Legacy = () => (
             <label htmlFor="9">Tell a browser what he will do next most likely</label>
             <P>
                 Use{' '}
-                <A href="https://w3c.github.io/resource-hints/#dfn-prefetch"><code>prefetch</code></A>,{' '}
-                <A href="https://w3c.github.io/resource-hints/#dfn-dns-prefetch"><code>dns-prefetch</code></A>,{' '}
-                <A href="https://w3c.github.io/resource-hints/#dfn-prerender"><code>prerender</code></A>,{' '}
-                <A href="https://w3c.github.io/preload/"><code>preload</code></A> and{' '}
-                <A href="https://w3c.github.io/resource-hints/#dfn-preconnext"><code>preconnect</code></A>.
+                <A external href="https://w3c.github.io/resource-hints/#dfn-prefetch"><code>prefetch</code></A>,{' '}
+                <A external
+                   href="https://w3c.github.io/resource-hints/#dfn-dns-prefetch"><code>dns-prefetch</code></A>,{' '}
+                <A external href="https://w3c.github.io/resource-hints/#dfn-prerender"><code>prerender</code></A>,{' '}
+                <A external href="https://w3c.github.io/preload/"><code>preload</code></A> and{' '}
+                <A external href="https://w3c.github.io/resource-hints/#dfn-preconnext"><code>preconnect</code></A>.
             </P>
 
             <input type="checkbox" id="10" />
             <label htmlFor="10">Check if you are using compression</label>
             <P>
-                <A href="https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/">HPACK</A> and{' '}
-                <A href="https://en.wikipedia.org/wiki/Gzip">Gzip</A>.
+                <A external
+                   href="https://blog.cloudflare.com/hpack-the-silent-killer-feature-of-http-2/">HPACK</A> and{' '}
+                <A external href="https://en.wikipedia.org/wiki/Gzip">Gzip</A>.
             </P>
 
             <input type="checkbox" id="11" />
@@ -83,7 +80,7 @@ const Optimization_Checklist_Legacy = () => (
 
             <input type="checkbox" id="12" />
             <label htmlFor="12">Take advice from Google</label>
-            <P>Use <A href="https://github.com/GoogleChrome/lighthouse">this
+            <P>Use <A external href="https://github.com/GoogleChrome/lighthouse">this
                 tool</A> and follow its recommendations.</P>
         </div>
 
@@ -149,24 +146,23 @@ const Optimization_Checklist_Legacy = () => (
 )
 
 export default () => (
-    <Post>
-        <Head>
-            <title>A few thoughts on frontend optimization</title>
-        </Head>
-
-        <H1>A few thoughts on frontend optimization</H1>
+    <Post title='A few thoughts on frontend optimization'>
 
         <P>Several days ago I've stumbled upon{' '}
-            <A href="http://www.mattzeunert.com/2017/01/30/lazy-javascript-parsing-in-v8.html">a topic</A>(<A
-                href="https://medium.com/devschacht/lazy-javascript-parsing-in-v8-99b5c3a6cbba">🇷🇺</A>) in the
-            internet where yet another frontend developer
+            <A external href="http://www.mattzeunert.com/2017/01/30/lazy-javascript-parsing-in-v8.html">a topic</A>
+            (<A external href="https://medium.com/devschacht/lazy-javascript-parsing-in-v8-99b5c3a6cbba">🇷🇺</A>) in
+            the internet where yet another frontend developer
             tries to &laquo;cheat the system&raquo; by outsmarting engines and compilers.</P>
         <P>The ending was a bit predictable: over 1,000 words, questionable libraries, and a bunch of hacks resulted in
             decreasing the load time</P>
+
         <br /><br /><br />
+
         <P>by 6ms</P>
+
         <br /><br /><br />
-        <P>in Chrome</P>
+
+        <P>in Chrome.</P>
 
         <H2>So what?</H2>
 

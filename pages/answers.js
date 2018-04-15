@@ -1,9 +1,8 @@
-import Head from 'next/head'
 import Post from '../layouts/post'
 import A from '../components/post/a'
-import { H1, H2 } from '../components/post/heading'
+import { H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
-import { UL, ULI, OL, OLI } from '../components/post/list'
+import { OL, OLI } from '../components/post/list'
 import Code, { Codeblock } from '../components/post/code'
 import HR from '../components/post/hr'
 
@@ -40,12 +39,7 @@ export default class extends React.Component {
 
     render() {
         return (
-            <Post>
-                <Head>
-                    <title>Several typical js tasks – pt. I</title>
-                </Head>
-
-                <H1>Several typical js tasks — pt. I</H1>
+            <Post title='Several typical js tasks – pt. I'>
 
                 <P>Wandering around the internet I’ve stumbled upon another <A
                     href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)">“list

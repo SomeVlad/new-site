@@ -1,18 +1,12 @@
-import Head from 'next/head'
-import Link from 'next/link'
 import Post from '../layouts/post'
-import { H1, H2 } from '../components/post/heading'
+import { H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
+import A from '../components/post/a'
 import { Image } from '../components/post/figure'
 import { UL, ULI } from '../components/post/list'
 
 export default () => (
-    <Post>
-        <Head>
-            <title>swiss knife bot</title>
-        </Head>
-
-        <H1>Telegram bot to&nbsp;make you happier</H1>
+    <Post title='Swiss knife bot'>
 
         <H2 id='preamble'>Preamble</H2>
         <P>I’m an active Telegram user and sometimes I find it frustrating and unhandy to do some routine stuff.
@@ -25,8 +19,7 @@ export default () => (
                alt="A useful robot"
                title="A useful robot" />
 
-        <P>I also realised that I use my <Link href="/facebook-link-fixer/"><a>facebook links
-            unshitter</a></Link>{' '}
+        <P>I also realised that I use my <A href="/facebook-link-fixer/">facebook links unshitter</A>{' '}
             quite often and hey, wouldn’t it be nice <del>if we were older</del> to have
             a bot pinned to top that does this and other useful things.</P>
 
@@ -36,11 +29,11 @@ export default () => (
 
         <H2 id="so-i-made-it">So I made it!</H2>
 
-        <P><a href="https://t.me/swiss_knife_bot">There it is</a>!</P>
+        <P><A external href="https://t.me/swiss_knife_bot">There it is</A>!</P>
 
-        <P><a href="https://github.com/SomeVlad/swiss-knife-bot">And there is a github repo</a>.</P>
+        <P><A external href="https://github.com/SomeVlad/swiss-knife-bot">And there is a github repo</A>.</P>
 
-        <P><a href="https://t.me/vladsamoylov">And here you can stay for updates</a>.</P>
+        <P><A external href="https://t.me/vladsamoylov">And here you can stay for updates</A>.</P>
 
         <H2 id="what-this-bot-is-capable-of">What is this bot capable&nbsp;of?</H2>
 
@@ -59,7 +52,7 @@ export default () => (
 
         <H2 id="what-do-you-want-it-to-be-capable-of">What do you want it to be capable of?</H2>
 
-        <P><a href="https://t.me/some_vlad">Do not hesitate to inform me via Telegram</a>.</P>
+        <P><A external href="https://t.me/some_vlad">Do not hesitate to inform me via Telegram</A>.</P>
 
         <H2 id="and-what-if-the-bot-doesnt-do-what-its-supposed-to">And what if the bot doesn’t do what it’s
             supposed

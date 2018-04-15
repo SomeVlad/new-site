@@ -1,20 +1,14 @@
-import Head from 'next/head'
 import Post from '../layouts/post'
 import A from '../components/post/a'
-import { H1, H2 } from '../components/post/heading'
+import { H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import { Image } from '../components/post/figure'
 import Code, { Codeblock } from '../components/post/code'
-import { UL, ULI, OL, OLI } from '../components/post/list'
+import { OL, OLI } from '../components/post/list'
 import HR from '../components/post/hr'
 
 export default () => (
-    <Post>
-        <Head>
-            <title>The Answer to The Ultimate Question of Life, the Universe, and Everything</title>
-        </Head>
-
-        <H1>The Answer to The Ultimate Question of Life, the Universe, and Everything</H1>
+    <Post title='The Answer to The Ultimate Question of Life, the Universe, and Everything'>
 
         <P>There is an often-raised question in javascript community: should we add semicolon to terminate each
             statement in C-like manner, or should we abandon them like an anachronism and never look back.</P>
@@ -48,7 +42,7 @@ export default () => (
 
         <P>Similarly to almost every other myth, this one comes from just an <strong>ignorance</strong>.</P>
 
-        <P><A href="https://www.destroyallsoftware.com/talks/wat">This
+        <P><A external href="https://www.destroyallsoftware.com/talks/wat">This
             talk</A>, for example. All of this derived from lack of understanding how javascript actually works. How
             does plus operator work, how its type conversion works, what is <Code>ToPrimitive</Code>, how parser and
             interpreter analyze code. And frankly, it is not ridiculous at all. Once you understand it, it makes a lot

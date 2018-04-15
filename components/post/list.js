@@ -51,6 +51,12 @@ const ULI = ({ children }) => (
                 display: inline-block;
             }
         `}</style>
+        {/*language=CSS*/}
+        <style jsx global>{`
+            li > * {
+                text-indent: 0;
+            }
+        `}</style>
     </li>
 )
 
@@ -74,10 +80,16 @@ const OLI = ({ counter = 'defaultCounter', children }) => (
                 font-size: var(--base-font-size);
                 line-height: 1.9;
                 color: #888888;
-                width:1.5em;
-                padding-right:0.5em;
+                width: 1.5em;
+                padding-right: 0.5em;
                 text-align: right;
-                display:inline-block;
+                display: inline-block;
+            }
+        `}</style>
+        {/*language=CSS*/}
+        <style jsx global>{`
+            li > * {
+                text-indent: 0;
             }
         `}</style>
     </li>

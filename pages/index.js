@@ -9,7 +9,7 @@ export default class extends React.Component {
         return (
             <Page>
                 <Head>
-                    <title>Влад Самойлов</title>
+                    <title>Frontend developer Vlad Samoylov</title>
                 </Head>
                 <Header mainpage />
                 <Blog posts={ posts } />

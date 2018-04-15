@@ -1,18 +1,11 @@
-import Head from 'next/head'
 import Post from '../layouts/post'
 import A from '../components/post/a'
-import { H1 } from '../components/post/heading'
 import Code from '../components/post/code'
 import { UL, ULI } from '../components/post/list'
 import CodePen from '../components/post/codePen'
 
 export default () => (
-    <Post>
-        <Head>
-            <title>In a nutshell: `fr` units</title>
-        </Head>
-
-        <H1>In a nutshell: `fr`&nbsp;units</H1>
+    <Post title='In a nutshell: `fr` units'>
 
         <UL>
             <ULI><Code>fr</Code> stands for <em>fraction</em>.</ULI>
@@ -27,8 +20,8 @@ export default () => (
 
         <CodePen hash='yXPRKY' user='some_vlad' height={400} defaultTab='result' preview={false}
                  loader={() => <div>
-                     <A href='https://codepen.io/some_vlad/pen/yXPRKY/'>Pen</A> by{' '}
-                     <A href='https://codepen.io/some_vlad'>Vlad Samoylov</A>.
+                     <A external href='https://codepen.io/some_vlad/pen/yXPRKY/'>Pen</A> by{' '}
+                     <A external href='https://codepen.io/some_vlad'>Vlad Samoylov</A>.
                  </div>} />
     </Post>
 )

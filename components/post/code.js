@@ -22,7 +22,7 @@ export const Codeblock = ({children, language = 'javascript', customStyle = {
     backgroundColor: '#fafafa',
     boxShadow: 'inset 3px 0px 34px rgba(0, 0, 0, 0.05)',
     borderRadius: '16px',
-    textIndent: '0'
+    marginBottom: '16px'
 }, ...rest}) => (
     <SyntaxHighlighter language={language} style={docco} customStyle={customStyle} {...rest}>
         {children}

@@ -1,13 +1,8 @@
-import Head from 'next/head'
-import Link from 'next/link'
 import Post from '../layouts/post'
-import { H1, H2, H3 } from '../components/post/heading'
+import { H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
-import A from '../components/post/a'
-import Youtube from '../components/post/youtube'
 import { Image } from '../components/post/figure'
-import { UL, OL, ULI, OLI } from '../components/post/list'
-import Code, { Codeblock } from '../components/post/code'
+import { Codeblock } from '../components/post/code'
 import HR from '../components/post/hr'
 
 class Facebook_Link_Fixer_Legacy extends React.Component {
@@ -299,12 +294,7 @@ class Facebook_Link_Fixer_Legacy extends React.Component {
 }
 
 export default () => (
-    <Post>
-        <Head>
-            <title>Facebook link fixer</title>
-        </Head>
-
-        <H1>Facebook link fixer</H1>
+    <Post title='Facebook link fixer'>
 
         <H2>Preamble</H2>
 

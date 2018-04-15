@@ -1,6 +1,5 @@
-import Head from 'next/head'
 import Post from '../layouts/post'
-import { H1, H2 } from '../components/post/heading'
+import { H2 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import { Image } from '../components/post/figure'
 import Code, { Codeblock } from '../components/post/code'
@@ -8,12 +7,7 @@ import { UL, ULI } from '../components/post/list'
 import HR from '../components/post/hr'
 
 export default () => (
-    <Post>
-        <Head>
-            <title>How to exit vim</title>
-        </Head>
-
-        <H1>How to exit vim</H1>
+    <Post title='How to exit vim'>
 
         <H2>First way</H2>
 

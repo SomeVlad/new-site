@@ -2,10 +2,10 @@ import Link from 'next/link'
 
 class Posts extends React.Component {
     render() {
-        const { year, entries } = this.props
+        const { entries } = this.props
         return (
             entries.map(({ id, date, title, description, picture, styles }) =>
-                <Link prefetch href={`/${id}`} key={id}>
+                <Link href={`/${id}`} key={id}>
                     <a className={picture ? 'with-picture' : ''} style={styles}>
                         {/*<span className="date">{date}</span>*/}
                         <h2>{title}</h2>
@@ -38,7 +38,7 @@ class Posts extends React.Component {
                                 background-size: cover;
                                 border-radius: 24px;
                             }
-                            
+
                             @media (max-width: 500px) {
                                 a {
                                     margin-bottom: 15px;
@@ -62,7 +62,7 @@ export default class extends React.Component {
                 {Object.keys(entries).sort().reverse().map((year, index) => (
                         <div className={`yearBlock${index === 0 ? ' first' : ''}`} key={index}>
                             <div className="year">{year}</div>
-                            <Posts year={year} entries={entries[year]} />
+                            <Posts entries={entries[year]} />
                         </div>
                     )
                 )}

@@ -1,5 +1,3 @@
-import Head from 'next/head'
-import Link from 'next/link'
 import A from '../components/post/a'
 import Post from '../layouts/post'
 import { H1, H2 } from '../components/post/heading'
@@ -42,17 +40,12 @@ export default class extends React.Component {
 
     render() {
         return (
-            <Post>
-                <Head>
-                    <title>Several typical js tasks – pt. II</title>
-                </Head>
+            <Post title='Several typical js tasks – pt. II'>
 
-                <H1>Several typical js tasks – pt. II</H1>
-
-                <P>This is the second part (first is <Link href='/answers/'><a>here</a></Link>) of things “each
+                <P>This is the second part (first is <A href='/answers/'>here</A>) of things “each
                     frontender should know”
-                    according to <A
-                        href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)">this</A> topic.</P>
+                    according to <A external
+                                    href="https://performancejs.com/post/hde6d32/The-Best-List-of-Frontend-JavaScript-Interview-Questions-(written-by-a-Frontend-Engineer)">this</A> topic.</P>
 
                 <Image src='/static/images/more-answers.png'
                        alt="I can definitely relate to that."
@@ -72,7 +65,7 @@ export default class extends React.Component {
                         <P><Code>fib2</Code> - like the <Code>fib</Code> function you implemented above, able to handle
                             numbers up to 50 (hint: look up memoization).</P>
 
-                        <P><Link href="/answers/"><a>Done already</a></Link>.</P>
+                        <P><A href="/answers/">Done already</A>.</P>
                     </OLI>
 
                     <OLI>
@@ -81,7 +74,7 @@ export default class extends React.Component {
                             round <Code>()</Code>. A string with interleaving braces should
                             return <Code>false</Code>.</P>
 
-                        <P><Link href="/answers/"><a>Done already</a></Link>.</P>
+                        <P><A href="/answers/">Done already</A>.</P>
                     </OLI>
 
                     <OLI>
@@ -117,7 +110,7 @@ export default class extends React.Component {
                         <P><Code>sort</Code> - implement the sort function to sort an array of numbers in O(N×log(N))
                             time.</P>
                         <P>Just a merge sort. I stole it.
-                            And <Link href='/semicolon/'><a>removed semicolons</a></Link>.</P>
+                            And <A href='/semicolon/'>removed semicolons</A>.</P>
 
                         <Codeblock>
                             {`function (array) {

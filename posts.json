@@ -3,7 +3,7 @@
     "2017": [
       {
         "id": "swiss-knife-bot",
-        "date": "12 Sep",
+        "date": "12 September",
         "title": "Telegram bot to make you happier",
         "description": "It is meant to do a lot of useful stuff. And it does.",
         "picture": "/static/images/bender-preview.jpg",
@@ -15,43 +15,43 @@
       },
       {
         "id": "more-answers",
-        "date": "3 Sep",
+        "date": "3 September",
         "title": "Several typical js tasks — pt. II",
         "description": "Maybe one day this post will save me even more time on an interview."
       },
       {
         "id": "answers",
-        "date": "31 Jul",
+        "date": "31 July",
         "title": "Several typical js tasks — pt. I",
         "description": "Maybe one day this post will save me some time on an interview."
       },
       {
         "id": "semicolon",
-        "date": "20 Jul",
+        "date": "20 July",
         "title": "The Answer to The Ultimate Question",
         "description": "of Life, the Universe, and Everything"
       },
       {
         "id": "web-animations-api",
-        "date": "1 Jul",
+        "date": "1 July",
         "title": "In a nutshell: Web Animations API",
         "description": "What is this? Is it better than CSS animations?"
       },
       {
         "id": "fr-units",
-        "date": "27 Jun",
+        "date": "27 June",
         "title": "In a nutshell: `fr` units",
         "description": "Just enough for you to start using them."
       },
       {
         "id": "pleeze-halp",
-        "date": "16 Jun",
+        "date": "16 June",
         "title": "How to exit vim",
         "description": "↑ Click here to figure out!"
       },
       {
         "id": "optimizing-frontend",
-        "date": "7 Jun",
+        "date": "7 June",
         "title": "A few thoughts on frontend optimization",
         "description": "There are a lot of things you can do in order to optimize client-side. But sometimes it goes wrong."
       },
@@ -60,12 +60,42 @@
         "date": "31 May",
         "title": "Facebook link fixer",
         "description": "A tool to fix facebook shittiness."
+      },
+      {
+        "id": "social-buttons-generator",
+        "date": "29 May",
+        "title": "Static social buttons generator",
+        "description": "A tool to generate social share links online."
+      },
+      {
+        "id": "date-format",
+        "date": "18 May",
+        "title": "Why I am not using mm-dd-yy date format",
+        "description": "In case you are curious.",
+        "picture": "/static/images/date-format.jpg",
+        "styles": {
+          "height": "378px",
+          "color": "white",
+          "padding": "40px"
+        }
+      },
+      {
+        "id": "containers-vs-cms",
+        "date": "26 April",
+        "title": "Containers vs. VMs explained in one pic",
+        "description": "If you ever thought about differences between say Vagrant + VirtualBox and Docker, here is a picture you definitely should take a look at."
+      },
+      {
+        "id": "static-social-buttons",
+        "date": "8 March",
+        "title": "Static social share buttons",
+        "description": "If you want to let your users share your site and don't want to load a bunch of useless SDKs, there is a way."
       }
     ],
     "2016": [
       {
         "id": "swiss-knife-bot",
-        "date": "12 Sep",
+        "date": "12 September",
         "title": "Telegram bot to make you happier",
         "description": "It is meant to do a lot of useful stuff. And it does.",
         "picture": "/static/images/bender-preview.jpg",
@@ -77,13 +107,13 @@
       },
       {
         "id": "more-answers",
-        "date": "3 Sep",
+        "date": "3 September",
         "title": "Several typical js tasks – pt. II",
         "description": "Maybe one day this post will save me even more time on an interview."
       },
       {
         "id": "answers",
-        "date": "31 Jul",
+        "date": "31 July",
         "title": "Several typical js tasks – pt. I",
         "description": "Maybe one day this post will save me some time on an interview."
       }
@@ -91,21 +121,21 @@
   },
   "feed": [
     {
-      "date": "26 September",
+      "date": "26 Septembertember",
       "link": {
         "href": "https://github.com/mr-mig/every-programmer-should-know",
         "text": "Yet another list of things everyone should know to pass an interview."
       }
     },
     {
-      "date": "26 September",
+      "date": "26 Septembertember",
       "link": {
         "href": "https://webdesign.tutsplus.com/tutorials/intriguing-css-level-4-selectors--cms-29499",
         "text": "Praying for :scope 🙏 "
       }
     },
     {
-      "date": "5 September",
+      "date": "5 Septembertember",
       "link": {
         "href": "http://bigocheatsheet.com/",
         "text": "Big-O cheat sheet."
@@ -133,82 +163,82 @@
       }
     },
     {
-      "date": "28 July",
+      "date": "28 Julyy",
       "link": {
         "href": "https://francisstokes.wordpress.com/2017/07/20/16-bit-vm-in-javascript/",
         "text": "How to build VM running in node."
       }
     },
     {
-      "date": "28 July",
+      "date": "28 Julyy",
       "text": "Good talk.",
       "video": "pjr6VJdDcHQ"
     },
     {
-      "date": "23 July",
+      "date": "23 Julyy",
       "link": {
         "href": "https://medium.engineering/typography-is-impossible-5872b0c7f891",
         "text": "The best article on typography in web."
       }
     },
     {
-      "date": "20 July",
+      "date": "20 Julyy",
       "text": "How to become rich as a frontend developer: <ul><li>Become a frontend developer</li><li>Git gud</li><li>Implement service workers on your site</li><li>Congratulations! Now you have a distributed network for mining bitcoins.</li></ul>"
     },
     {
-      "date": "15 July",
+      "date": "15 Julyy",
       "text": "Incredible.",
       "video": "dIiwFzFvsmw"
     },
     {
-      "date": "14 July",
+      "date": "14 Julyy",
       "tweet": "https://twitter.com/malyw/status/885522490201649153"
     },
     {
-      "date": "13 July",
+      "date": "13 Julyy",
       "link": {
         "href": "http://cssstats.com",
         "text": "A tool to analyze your CSS"
       }
     },
     {
-      "date": "11 July",
+      "date": "11 Julyy",
       "link": {
         "href": "https://hackernoon.com/es8-was-released-and-here-are-its-main-new-features-ee9c394adf66",
         "text": "ES8 (ES2017) main features"
       }
     },
     {
-      "date": "11 July",
+      "date": "11 Julyy",
       "text": "New videos from AmsterdamJS",
       "video": "JWFyH13_I3o"
     },
     {
-      "date": "10 July",
+      "date": "10 Julyy",
       "text": "Haha. Funny. <a href='http://javascriptsucks.com' target='_blank' rel='noopener noreferrer'>http://javascriptsucks.com</a>"
     },
     {
-      "date": "10 July",
+      "date": "10 Julyy",
       "text": "Probably the most useful video about event loop for everyone sentenced to work with javascript. Especially surprising that these concepts are highly attention deprived, even though most of the javascript developers have to deal with them on a daily basis.",
       "video": "8aGhZQkoFbQ"
     },
     {
-      "date": "8 July",
+      "date": "8 Julyy",
       "text": "Texts and images!",
       "image": "/images/welcome-to-internet.jpg"
     },
     {
-      "date": "8 July",
+      "date": "8 Julyy",
       "text": "Tweets!",
       "tweet": "https://twitter.com/SomeVlad/status/883645863092006912"
     },
     {
-      "date": "8 July",
+      "date": "8 Julyy",
       "text": "Instagram photos!",
       "instagram": "BWGBvk2Hj8k"
     },
     {
-      "date": "8 July",
+      "date": "8 Julyy",
       "text": "Youtube videos!",
       "video": "oHg5SJYRHA0"
     }

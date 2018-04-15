@@ -1,18 +1,11 @@
-import Head from 'next/head'
 import Post from '../layouts/post'
-import { H1 } from '../components/post/heading'
 import P from '../components/post/paragraph'
 import Code, { Codeblock } from '../components/post/code'
 import { UL, ULI } from '../components/post/list'
 import HR from '../components/post/hr'
 
 export default () => (
-    <Post>
-        <Head>
-            <title>In a nutshell: Web Animations API</title>
-        </Head>
-
-        <H1>In a nutshell: Web Animations API</H1>
+    <Post title='In a nutshell: Web Animations API'>
 
         <UL> {/* TODO: OL*/}
             <ULI>Web Animations API is a native API for animations in JavaScript.</ULI>
